@@ -1,0 +1,15 @@
+##########  BPE Paper   ###########
+1. http://www.aclweb.org/anthology/P16-1162
+
+2. https://arxiv.org/pdf/1710.02187.pdf
+
+
+######### BPE embedding download  ##########
+1. https://github.com/bheinzerling/bpemb
+have 275 languages
+
+######## BPE adventage ##################
+1. the size of embedding file is more small
+146365*300 = 399M (BPE)
+307607*256 = 715M (word2vec)
+83608*256 = 194M (GWE - char embedding)
