@@ -1,0 +1,30 @@
+分词在神经网络中的实现方法调研
+
+1. Deep Learning for Chinese Word Segmentation and POS Tagging (引用：164, 2013)
+2. Max-Margin Tensor Neural Network for Chinese Word Segmentation (引用：100, 2014)
+3. Long Short-Term Memory Neural Networks for Chinese Word Segmentation (引用：102, 2015)
+4. Neural Word Segmentation Learning for Chinese (引用：62, 2016)
+5. Gated recursive neural network for Chinese word segmentation (引用：49, 2015)
+6. A critical appraisal of the research on Chinese word segmentation (引用：65, 2001)
+7. Dependency-based gated recursive neural network for chinese word segmentation (引用：21, 2016)
+8. The State of the Art and Difficulties in Automatic Chinese Word Segmentation (引用：60, 2005)
+9. Model of Chinese words rough segmentation based on NYShortestYPaths method (引用：78, 2002)
+10. Chinese word segmentation system research (引用：24, 2004)
+11. Bi-directional LSTM recurrent neural network for Chinese word segmentation (引用：15, 2016)
+12. Chinese word segmentation and named entity recognition: A pragmatic approach (引用：245, 2005)
+
+
+POS在神经网络中的实现方法调研
+
+1. Part-of-speech tagging with neural networks (引用：350, 1994)
+2. Multilingual part-of-speech tagging with bidirectional long short-term memory models and auxiliary loss (引用：113, 2016)
+3. Part-of-speech tagging with bidirectional long short-term memory recurrent neural network (引用：40, 2015)
+4. Part-of-speech tagging with recurrent neural networks (引用：29, 2001)
+5. Multilingual part-of-speech tagging with weightless neural networks (引用：30, 2015)
+6. A neural network approach to part-of-speech tagging (引用：16, 1996)
+7. Neural networks leverage corpus-wide information for part-of-speech tagging (引用：22, 2014)
+8. Efficient part-of-speech tagging with a min-max modular neural-network model (引用：17, 2003)
+9. Learning character-level representations for part-of-speech tagging (引用：278, 2014)
+10. Bidirectional LSTM-CRF models for sequence tagging (引用：414, 2015)
+11. Part of speech tagging using a network of linear separators (引用：134, 1998)
+
