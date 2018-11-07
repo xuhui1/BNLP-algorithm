@@ -1,30 +1,63 @@
-分词在神经网络中的实现方法调研
+Tokenizer method in NN
 
-1. Deep Learning for Chinese Word Segmentation and POS Tagging (引用：164, 2013)
-2. Max-Margin Tensor Neural Network for Chinese Word Segmentation (引用：100, 2014)
-3. Long Short-Term Memory Neural Networks for Chinese Word Segmentation (引用：102, 2015)
-4. Neural Word Segmentation Learning for Chinese (引用：62, 2016)
-5. Gated recursive neural network for Chinese word segmentation (引用：49, 2015)
-6. A critical appraisal of the research on Chinese word segmentation (引用：65, 2001)
-7. Dependency-based gated recursive neural network for chinese word segmentation (引用：21, 2016)
-8. The State of the Art and Difficulties in Automatic Chinese Word Segmentation (引用：60, 2005)
-9. Model of Chinese words rough segmentation based on NYShortestYPaths method (引用：78, 2002)
-10. Chinese word segmentation system research (引用：24, 2004)
-11. Bi-directional LSTM recurrent neural network for Chinese word segmentation (引用：15, 2016)
-12. Chinese word segmentation and named entity recognition: A pragmatic approach (引用：245, 2005)
+1. Deep Learning for Chinese Word Segmentation and POS Tagging (164, aclweb , 2013)
+2. Long Short-Term Memory Neural Networks for Chinese Word Segmentation (102, aclweb , 2015)
+3. Max-Margin Tensor Neural Network for Chinese Word Segmentation (100, aclweb, 2014)
+4. Neural Word Segmentation Learning for Chinese (62, ACL , 2016)
+5. Gated recursive neural network for Chinese word segmentation (49, aclweb , 2015)
+6. Dependency-based gated recursive neural network for chinese word segmentation (21, aclweb , 2016)
+7. Bi-directional LSTM recurrent neural network for Chinese word segmentation (15, Springer , 2016)
+8. Subword Encoding in Lattice LSTM for Chinese Word Segmentation (0, arxiv, 2018, )
+9. Fast and accurate neural word segmentation for Chinese (20, ACL , 2017,)
+10. State-of-the-art Chinese Word Segmentation with Bi-LSTMs (0, arxiv , 2018)
+11. Neural Chinese Word Segmentation with Dictionary Knowledge (0, Springer , 2018)
+12. Transfer learning for low-resource chinese word segmentation with a novel neural network (5, Springer , 2017)
+13. Neural word segmentation with rich pretraining (12, ACL , 2017)
+14. Character-based joint segmentation and POS tagging for Chinese using bidirectional RNN-CRF (14, IJCNLP , 2017)
 
 
-POS在神经网络中的实现方法调研
+survey: 
+http://www.hankcs.com/nlp/segment/depth-learning-chinese-word-segmentation-survey.html#fn5
 
-1. Part-of-speech tagging with neural networks (引用：350, 1994)
-2. Multilingual part-of-speech tagging with bidirectional long short-term memory models and auxiliary loss (引用：113, 2016)
-3. Part-of-speech tagging with bidirectional long short-term memory recurrent neural network (引用：40, 2015)
-4. Part-of-speech tagging with recurrent neural networks (引用：29, 2001)
-5. Multilingual part-of-speech tagging with weightless neural networks (引用：30, 2015)
-6. A neural network approach to part-of-speech tagging (引用：16, 1996)
-7. Neural networks leverage corpus-wide information for part-of-speech tagging (引用：22, 2014)
-8. Efficient part-of-speech tagging with a min-max modular neural-network model (引用：17, 2003)
-9. Learning character-level representations for part-of-speech tagging (引用：278, 2014)
-10. Bidirectional LSTM-CRF models for sequence tagging (引用：414, 2015)
-11. Part of speech tagging using a network of linear separators (引用：134, 1998)
+
+POS method in NN
+
+1. Bidirectional LSTM-CRF models for sequence tagging (414, arxiv, 2015)
+2. Multilingual part-of-speech tagging with bidirectional long short-term memory models and auxiliary loss (113, ACL, 2016)
+3. Part-of-speech tagging with bidirectional long short-term memory recurrent neural network (40, ACL, 2015)
+4. Multilingual part-of-speech tagging with weightless neural networks (30, Elsevier, 2015)
+5. Bidirectional Deep Learning of Context Representation for Joint Word Segmentation and POS Tagging (1, Springer, 2017)
+6. Neural Semi-Markov Conditional Random Fields for Robust Character-Based Part-of-Speech Tagging (0, arxiv, 2018)
+7. Part-of-speech tagging for twitter with adversarial neural networks (11, aclweb, 2017)
+8. Transfer learning for sequence tagging with hierarchical recurrent networks (55, ICLR , 2017)
+9. A Novel Neural Network Model for Joint POS Tagging and Graph-based Dependency Parsing (8, CoNLL, 2017)
+10. Neural networks leverage corpus-wide information for part-of-speech tagging (22, aclweb , 2014)
+
+
+NER method in NN
+
+1, Neural architectures for named entity recognition (626, NAACL, 2016)
+2, Bidirectional LSTM-CRF models for sequence tagging (418, arxiv, 2015)
+3, End-to-end sequence labeling via bi-directional lstm-cnns-crf (379, ACL, 2016)
+4, Named entity recognition with bidirectional LSTM-CNNs (295, Association for Computational Linguistics, 2015)
+6, Germeval-2014: Nested named entity recognition with neural networks (25, bsz-bw , 2014)
+7, Named entity recognition in Chinese clinical text using deep neural network (25, Stud Health Technol Inform , 2015)
+8, Disease named entity recognition by combining conditional random fields and bidirectional recurrent neural networks (23, academic.oup , 2016)
+9, Biomedical named entity recognition based on extended recurrent neural networks (23, ieee , 2015)
+10, Biomedical named entity recognition based on deep neutral network (16, semanticscholar , 2015)
+11, Character-level neural network for biomedical named entity recognition (15, Elsevier , 2017)
+12. Empower Sequence Labeling with Task-Aware Neural Language Model (AAAI'18)
+13. Reporting Score Distributions Makes a Difference: Performance Study of LSTM-networks for Sequence Tagging (44, EMNLP, 2017)
+14. Unsupervised Aspect Term Extraction with B-LSTM & CRF using Automatically Labelled Datasets (4, EMNLP , 2017)
+15. NeuroNER: an easy-to-use program for named-entity recognition based on neural networks (35, arxiv, 2017)
+16. Deep learning with word embeddings improves biomedical named entity recognition (48, oup, 2017)
+17. A neural network multi-task learning approach to biomedical named entity recognition (9, biomedcentral, 2017)
+18. Transfer learning for sequence tagging with hierarchical recurrent networks (55, ICLR, 2017)
+19. End-to-end Recurrent Neural Network Models for Vietnamese Named Entity Recognition: Word-level vs. Character-level (7, Springer, 2017)
+20. Transfer Learning for Named-Entity Recognition with Neural Networks (12, arxiv, 2017)
+21. Character-based Bidirectional LSTM-CRF with words and characters for Japanese Named Entity Recognition (13, aclweb, 2017)
+22. Deep Active Learning for Named Entity Recognition (13, arxiv, 2017)
+23. Multi-channel bilstm-crf model for emerging named entity recognition in social media (6, aclweb, 2017)
+24. Named Entity Recognition with stack residual LSTM and trainable bias decoding (8, arxiv, 2017)
+
 
