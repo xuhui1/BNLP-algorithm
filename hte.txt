@@ -1,0 +1,33 @@
+Pipeline
+Corpora
+Preprocess
+Candidate Set
+Hash Tag Score
+Hash Tag Result
+Online Dictionary Matching
+Evaluation
+Next To Do
+The steps of data cleaning contains: extract text from weibo, split text into topic and name
+Extract text from weibo:
+The type of weibo data is json
+Filter invalid characters: such as ‘//’, ‘@’, english character, ‘http:’ and so on.
+Split text into topic and user name:
+The content surrounded by “#” is topic
+The content surrounded by “@ :” is name
+The score of hash tag contains: TF-IDF, NER score, POS score and word length score
+The probability of NER word as hash tag is large
+Different POS have different score, the probability of word pos about ‘ni’, ‘ns’, ‘nh’ and ‘ws’  as hash tag is very large and word pos about ‘c’ and ‘mq’ as hash tag is small.
+The longer the word length, the greater the probability of being hash tag.
+The number of Hash Tag dictionaries is: 257K
+The part hash tag word result as bellow:
+Test Corpus
+Count: ~300
+Size: 47k (Weibo Data)
+Average Label: ~3
+Test Result
+If the correct label is in the predicted label, the minimum value of the correct label is predicted as the predicted number of labels.
+The reasons for poor performance are:
+1. The predicted label has an overlap relationship.
+For example: The predict label contains[‘machine learning’, ‘machine’, ‘learning’] and the real label is ‘machine learning’.
+2. The real label contains Tri-gram words, but our vocabulary only have bi-gram words.
+We will start the development of HTE 2nd version after finish 1st version on-device BNLP.
