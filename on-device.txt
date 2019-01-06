@@ -1,31 +1,31 @@
-1. I will introduce the PPT from six parts：Introduction、Corpora、Approach、Experiment、Conclusion、Next To Do and I will focus on corporate and experiment result.
-Character set: There are twenty one thousand common characters in Chinese.
+1. I will introduce this PPT in six parts, including Introduction、Corpora、Approach、Experiment、Conclusion and Next To Do. and I will focus on corpora and experiment result.
+The page contains:
+There are twenty one thousand common characters in Chinese.
 Limited by the size of the model, most of our experiments are based on char. (Module size: recommend 10mb, Run memory size: same as module size)
 Limited by the speed of decoding, all experiments are decoded by softmax. (20doc/sec)
 In the sequence tagging tasks, there are few papers that are completely char-based. (Performance require)
-2. on the right is a example of three task.
-3. train set have 100 thousand sentence, and validate set test set have 10 thousand sentence. corpus statistical contain: word, BPE and ner, ner have location, organize, person.
-4. In the ppt, I only introduce same method, most method will introduction by doctor wang. First column is model, the multi task joint learning have char-based and learning word representation: char-based contains: char + n-gram+radical, char+cnn, the second column is the suit task, the three column is the paper link, the last column is the paper publish in journal and year.
-5. The first model is the common method used to sequence tagging task, in the model using n-gram and char radical feature and connect bi-gru layer and softmax layer.
-google ai publish one paper at emnlp that only use n-gram feature, and at multi dataset have best performance.
-6. The second model is use a gate combination neural network over characters to produce distributed representation of word candidates, and combine to a LSTM score model.
-It give a windows, and combination words for different character, and scoring for candidate word, finally select the higher score word.
-7. The char CNN, learning word representation and character encoder model have been introduction by doctor wang.
-8. Multi task joint learning according different decode method have two ways: the one is we assemble multi task label into one task label before train, and will decoding multi task label in decode layer. the two is the different label together trains and in decoder layer will direct output multi task label.
-9. This is the value of hyper parameter.
-10. This is the experiment of tokenizer. according to the table, we can find the greedCWE value of F1 is highest: ninety six point eight, but the method have some issue: the author replaced all words more than four character with character 'L' in training set and test test. In other words, more than four character words can`t achieved.
+2. on the right, this is a example of three task.
+3. In the page, This is the statistical result of corpus, We select part corpus from based server bnlp, the train set have 100 thousand sentence, and validate set test set have 10 thousand sentence. corpus statistical contain: word, BPE and ner, The word contains: token, average sentence length, characters. The BPE contains: token, we train bpe use total server bnlp corpus, and set vocabulary forty thousand words, ner have location, organize, person.
+4. This is the statistical result of low frequency character, this is the number of accumulated and this is the ratio.
+5. In the ppt, I only introduce some method, most method will introduction by doctor wang. First column is model, the multi task joint learning have char-based and word-based: char-based indicate the input only character such as: char + n-gram+radical, char+cnn. and word-based indicate the input is words such as learning word representation. the second column is the suit task, the three column is the paper link, the last column is the paper publish in journal and year.
+6. The first model is the common method used to sequence tagging task, in the model using n-gram and char radical feature and connect bi-gru layer and softmax layer.
+google ai publish one paper at emnlp that only use n-gram feature, bi-gru layer, and at multi dataset have best performance. They thought the oov is the main problem influence performance for tokenizer task.
+7. The second model is use a gate combination neural network over characters to produce distributed representation of word candidates, and combine to a LSTM score model.
+It give a windows, and combination words for different character, and scoring for candidate words, finally select the higher score word.
+8. The char CNN, learning word representation and character encoder model have been introduction by doctor wang.
+9. Multi task joint learning: according to different decode method have two ways: the one is we assemble multi task label into single task label before train. the two is the different label together trains.
+10. This is the value of hyper parameter.
+11. This is the experiment　result of tokenizer. according to the table, we can find the greedCWE value of F1 is highest: ninety six point eight, but the method have some issue: the author replaced all words more than four character with 'L' in training set and test set. In other words, words with more than four character can not be achieved.
 When I set the value of decode window to ten, and not replaced word in corpus, and find the value of F1 is decreased by a little, but the model size is increased by a lot.
 The time of GPU and CPU is the value of average of twelve times and removing a max and a min time.
 The run memory is tested by python package 'memory_profiler'.
-11. This is the experiment result of POS. We find the n-gram model performance is not better, the model of learning word representation value of F1 is highest, but the time is longest.
-The BPE model value of F1 is very close to learning word representation, but the model size have a little big. The vocabulary of BPE model have four hundred thousand, we can select more less words.
+12. This is the experiment result of POS. We find the n-gram model performance is not better, the model of learning word representation value of F1 is highest, but the time is longest.
+The BPE model value of F1 is very close to learning word representation, but the model size have a little big. The vocabulary of BPE model have four hundred thousand, we can select more less words. 
 The model of lightrnn value of F1 is worst
-12. Learning word representation:  value of F1 is best, but the time is longest. 
- BPE(40K) + GRU: the time is shortest and value of F1 is very close to learning word representation model.
-13. Char + CNN + GRU:  the value of NER are decreased a lot. 
- The size of model and run memory are almost the same as POS model.
- The time of GPU or CPU has increased a little.
-14. The value of NER F1 is increased by about 1% and value of POS is decreased by 0.2%.
- The size of model and run memory are almost the same as POS model.
- The time of GPU or CPU has increased a little.
-15. 
+13. the result of NER same as pos.
+14. This is the result of three task joint learning, this is the result compare with single task, blue is increase and red is decrease.
+15. This is the result of two task joint learning, The value of NER F1 is increased by about percent 1 and value of POS is decreased by percent zero point two.
+limited by the time, we only make one experiment.
+16. we recommend some method for every task.
+17. This is our development plan, if there are any problem, we will adjust.
+18. my sharing is over, thanks.
