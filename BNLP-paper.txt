@@ -60,4 +60,13 @@ NER method in NN
 23. Multi-channel bilstm-crf model for emerging named entity recognition in social media (6, aclweb, 2017)
 24. Named Entity Recognition with stack residual LSTM and trainable bias decoding (8, arxiv, 2017)
 
-
+Minimal Gated Unit for Recurrent Neural Networks(Zhou, et al, ICML2016)
+Training RNNs as Fast as CNNs (Lei, 2017, cf. https://arxiv.org/abs/1709.02755)
+Capacity and Trainability in Recurrent Neural Networks (Collins, google, ICLR2017)
+Model compression via distillation and quantization, ICLR2018, code https://github.com/antspy/quantized_distillation 
+Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding  by Song Han et al, ICLR2016.
+Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding 
+Adversarial Training Methods for Semi-Supervised Text Classification, Miyato, ICML2017
+Semi-Supervised Sequence Modeling with Cross-View Training, (Clark, et al, EMNLP2018)
+Semi-supervised Multitask Learning for Sequence Labeling, (Rei, ACL2017)
+A Survey on Deep Learning for Named Entity Recognition
