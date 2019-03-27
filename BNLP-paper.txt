@@ -70,3 +70,4 @@ Adversarial Training Methods for Semi-Supervised Text Classification, Miyato, IC
 Semi-Supervised Sequence Modeling with Cross-View Training, (Clark, et al, EMNLP2018)
 Semi-supervised Multitask Learning for Sequence Labeling, (Rei, ACL2017)
 A Survey on Deep Learning for Named Entity Recognition
+Learning K-way D-dimensional Discrete Codes for Compact Embedding Representations
